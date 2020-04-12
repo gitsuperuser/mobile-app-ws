@@ -1,0 +1,569 @@
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder
+$ git --version
+git version 2.26.0.windows.1
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder
+$ git commit
+fatal: not a git repository (or any of the parent directories): .git
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder
+$ git pull
+fatal: not a git repository (or any of the parent directories): .git
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder
+$ git push
+fatal: not a git repository (or any of the parent directories): .git
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder
+$ clear
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder
+$ git init
+Initialized empty Git repository in D:/Gitfolder/.git/
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git add .
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git stats
+git: 'stats' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git add .
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git commit -m  'first'
+[master (root-commit) ed03c0b] first
+ Committer: Sivamskr@corp.amazonworkspaces.com <Sivamskr@corp.amazonworkspaces.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ clear
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git-diff
+bash: git-diff: command not found
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git --diff
+unknown option: --diff
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git -diff
+unknown option: -diff
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git-dif
+bash: git-dif: command not found
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git-diff
+bash: git-diff: command not found
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ clear
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git diff
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ touch .gitignore
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git push remote origin master
+error: src refspec origin does not match any
+error: failed to push some refs to 'remote'
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git remote add
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git remote add --master
+error: option `master' requires a value
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ clear
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git add .
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git log
+commit ed03c0b47e9adc434b8ad8e6c3ecc28356ef030e (HEAD -> master)
+Author: Sivamskr@corp.amazonworkspaces.com <Sivamskr@corp.amazonworkspaces.com>
+Date:   Sun Apr 12 10:05:50 2020 +0530
+
+    first
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ .git
+bash: .git: command not found
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ cd .git
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder/.git (GIT_DIR!)
+$ ls
+COMMIT_EDITMSG  config  description  HEAD  hooks/  index  info/  logs/  objects/  refs/
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder/.git (GIT_DIR!)
+$ cd head
+bash: cd: head: Not a directory
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder/.git (GIT_DIR!)
+$ cat HEAD
+ref: refs/heads/master
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder/.git (GIT_DIR!)
+$ cat refs/heads/master
+ed03c0b47e9adc434b8ad8e6c3ecc28356ef030e
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder/.git (GIT_DIR!)
+$ git diff
+fatal: this operation must be run in a work tree
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder/.git (GIT_DIR!)
+$ cd..
+bash: cd..: command not found
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder/.git (GIT_DIR!)
+$ cd ..
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git diff
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git log
+commit ed03c0b47e9adc434b8ad8e6c3ecc28356ef030e (HEAD -> master)
+Author: Sivamskr@corp.amazonworkspaces.com <Sivamskr@corp.amazonworkspaces.com>
+Date:   Sun Apr 12 10:05:50 2020 +0530
+
+    first
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git diff -cache
+error: invalid option: -cache
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git diff --cache
+error: invalid option: --cache
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git diff --cached
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..e69de29
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git diff master
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..e69de29
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ clear
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git remote
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git remote add origin \https://github.com/gitsuperuser/restfulapi
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git push origin master
+To https://github.com/gitsuperuser/restfulapi
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gitsuperuser/restfulapi'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 4.48 KiB | 352.00 KiB/s, done.
+From https://github.com/gitsuperuser/restfulapi
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git push origin master
+To https://github.com/gitsuperuser/restfulapi
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/gitsuperuser/restfulapi'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git push origin master
+To https://github.com/gitsuperuser/restfulapi
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/gitsuperuser/restfulapi'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git pull origin master
+From https://github.com/gitsuperuser/restfulapi
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git push -f
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git push -f origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/gitsuperuser/restfulapi
+ + 47287f9...ed03c0b master -> master (forced update)
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), 5.13 KiB | 477.00 KiB/s, done.
+From https://github.com/gitsuperuser/restfulapi
+ * [new branch]      april_release -> origin/april_release
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git branch
+* master
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ git branch -a
+* master
+  remotes/origin/april_release
+  remotes/origin/master
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Gitfolder (master)
+$ cd D:\Workspace
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace
+$ touch .gitignore
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace
+$ cd mobile-app-ws/
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws
+$ git init
+Initialized empty Git repository in D:/Workspace/mobile-app-ws/.git/
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git remote add origin https://github.com/gitsuperuser/mobile-app-ws
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        .mvn/
+        mvnw
+        mvnw.cmd
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/gitsuperuser/mobile-app-ws'
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git push -f  origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/gitsuperuser/mobile-app-ws'
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .mvn/wrapper/MavenWrapperDownloader.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .mvn/wrapper/maven-wrapper.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mvnw.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mvnw.cmd.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/main/java/com/racharoomies/MobileAppWsApplication.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/test/java/com/racharoomies/MobileAppWsApplicationTests.java.
+The file will have its original line endings in your working directory
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git commit -m "first"
+[master (root-commit) e5f4148] first
+ Committer: Sivamskr <Sivamskr@CORP.AMAZONWORKSPACES.COM>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 16 files changed, 917 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .mvn/wrapper/MavenWrapperDownloader.java
+ create mode 100644 .mvn/wrapper/maven-wrapper.jar
+ create mode 100644 .mvn/wrapper/maven-wrapper.properties
+ create mode 100644 mvnw
+ create mode 100644 mvnw.cmd
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/racharoomies/MobileAppWsApplication.java
+ create mode 100644 src/main/java/com/racharoomies/ui/contoller/UserController.java
+ create mode 100644 src/main/java/com/racharoomies/ui/model/request/UserRequest.java
+ create mode 100644 src/main/java/com/racharoomies/ui/model/response/UserResponse.java
+ create mode 100644 src/main/java/com/racharoomies/ui/service/UserService.java
+ create mode 100644 src/main/java/com/racharoomies/ui/serviceimpl/UserServiceImpl.java
+ create mode 100644 src/main/java/com/racharoomies/ui/shared/dto/UserDTO.java
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/test/java/com/racharoomies/MobileAppWsApplicationTests.java
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git log
+commit e5f4148f5127eb028ea999f76ccb47be4425ffd3 (HEAD -> master)
+Author: Sivamskr <Sivamskr@CORP.AMAZONWORKSPACES.COM>
+Date:   Sun Apr 12 15:04:06 2020 +0530
+
+    first
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git push origin master
+Enumerating objects: 39, done.
+Counting objects: 100% (39/39), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (26/26), done.
+Writing objects: 100% (39/39), 54.60 KiB | 3.90 MiB/s, done.
+Total 39 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/gitsuperuser/mobile-app-ws
+ * [new branch]      master -> master
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git push --set-upstream origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git push
+Everything up-to-date
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$ git fetch
+From https://github.com/gitsuperuser/mobile-app-ws
+ * [new branch]      may_release -> origin/may_release
+
+Sivamskr@IP-C6136BA7 MINGW64 /d/Workspace/mobile-app-ws (master)
+$
